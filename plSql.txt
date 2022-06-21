@@ -1,0 +1,15 @@
+CREATE TABLE        newUserstable
+(userId Int CONSTRAINT  newUsersTable PRIMARY KEY,
+userName            VARCHAR (30),
+youtubeVideo             VARCHAR(60),
+isAdmin             VARCHAR(3),
+viewsCount        INT);
+
+insert into newUserstable (userid,isAdmin)
+values (1,'y');
+
+       
+CREATE SEQUENCE  GENERATEID
+START WITH 2
+INCREMENT BY 1
+NOCYCLE;
